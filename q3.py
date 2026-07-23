@@ -127,7 +127,7 @@ class match:
         aggregate_defense = defending_team.get_aggregate_defense()
 
         attack_roll = aggregate_attack * random.uniform(0.75, 1.25)
-        defense_roll = aggregate_defense * 1.3 * random.uniform(0.80, 1.20)
+        defense_roll = aggregate_defense * 1.3 * random.uniform(0.80, 1.20) # ai helped me with this function because i really couldnt know how too deal with random
 
         if attack_roll > defense_roll:
             if attacking_team == self.home_team:
